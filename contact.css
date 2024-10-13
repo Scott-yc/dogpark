@@ -1,0 +1,143 @@
+
+body {
+    background-image: url('dogbk.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.contact-main-container {
+    background-color: rgba(255, 255, 255, 0.85); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.contact-main-container:hover {
+    transform: scale(1.02); 
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3); 
+}
+
+
+form {
+    background-color: rgba(255, 255, 255, 0.75); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; 
+}
+
+
+form:hover {
+    background-color: rgba(255, 255, 255, 0.85); 
+}
+
+
+button[type="submit"] {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* 添加平滑的过渡效果 */
+}
+
+button[type="submit"]:hover {
+    background-color: #ff4747;
+    transform: scale(1.05); 
+}
+
+
+.header {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-menu {
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+.navbar .active {
+    background-color: #ff6b6b;
+}
+
+.contact-main-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-main-container p {
+    text-align: center;
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-info {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-info h3 {
+    color: #333;
+}
+
+.contact-info p {
+    color: #666;
+    font-size: 16px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #ff6b6b;
+}

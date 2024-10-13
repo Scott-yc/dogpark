@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Park List</title>
+    <link rel="stylesheet" href="DogParkList.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
+        <div class="navbar" id="navbar">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="map.html"><i class="fas fa-map-marker-alt"></i> Map</a>
+            <a href="DogParkList.html" class="active"><i class="fas fa-list"></i> Dog Park List</a>
+            <a href="weather.html"><i class="fas fa-cloud-sun"></i> Weather</a>
+            <a href="contact.html"><i class="fas fa-phone"></i>Contact us</a>
+        </div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for a park..." />
+            <button id="searchButton">Search</button>
+            <p id="inputWarning" style="color: red; display: none;">Please enter valid location only.</p>   
+        </div>
+    </div>
+
+
+    <div class="content-container">
+
+        <div class="filter-bar">
+            <button class="filter-button" data-filter="largeDog">Large Dog</button>
+            <button class="filter-button" data-filter="smallDog">Small Dog</button>
+            <button class="filter-button" data-filter="light">Light</button>
+            <button class="filter-button" data-filter="fence">Fence</button>
+            <button class="filter-button" data-filter="dogAgilityEquipment">Dog Agility Equipment</button>
+        </div>
+
+
+        <div class="park-list-container" id="parkList">
+
+        </div>
+    </div>
+
+
+    <script src="DogParkList.js"></script>
+</body>
+</html>

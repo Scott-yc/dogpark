@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Park Finder</title>
+    <link rel="stylesheet" href="Doggogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
+        
+        <div class="navbar" id="navbar">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="map.html"><i class="fas fa-map-marker-alt"></i> Map</a>
+            <a href="DogParkList.html"><i class="fas fa-list"></i> Dog Park List</a>
+            <a href="weather.html"><i class="fas fa-cloud-sun"></i> Weather</a>   
+            <a href="contact.html"><i class="fas fa-phone"></i> Contact us</a>
+        </div>
+
+        <div class="title">
+            <h1>Find the perfect dog park near you</h1>
+            <p>Over 160 dog off-leash areas in parks across Brisbane.</p>
+            <button onclick="searchParks()">Explore</button>
+            <p class="subtitle">Search for dog parks by location to discover the best spot for your furry friend.</p>
+        </div>
+    </div>
+    <script src="Doggogo.js"></script>
+</body>
+</html>

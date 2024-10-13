@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <div class="header">
+        <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
+        <div class="search-box">
+            <input type="text" id="locationInput" placeholder="Search location">
+            <button id="searchButton">Search</button>
+        </div>
+        <div class="navbar" id="navbar">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="map.html"><i class="fas fa-map-marker-alt"></i> Map</a>
+            <a href="DogParkList.html"><i class="fas fa-list"></i> Dog Park List</a>
+            <a href="weather.html" class="active"><i class="fas fa-cloud-sun"></i> Weather</a>
+            <a href="contact.html"><i class="fas fa-phone"></i>Contact us</a>
+        </div>
+    </div>
+
+
+    <div class="weather-main-container">
+        <div class="current-weather">
+        </div>
+        <div class="daily-forecast">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="weather.js"></script>
+
+</body>
+</html>
