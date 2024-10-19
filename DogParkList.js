@@ -1,7 +1,7 @@
 $(document).ready(function () {
     fetchDogParks();
 
- 
+    
     $('#searchButton').on('click', function () {
         const query = $('#searchInput').val().trim();
         if (isValidInput(query)) {
@@ -12,7 +12,7 @@ $(document).ready(function () {
         }
     });
 
-   
+    
     $('#searchInput').on('input', function () {
         const query = $(this).val().trim();
         if (isValidInput(query)) {
@@ -36,9 +36,8 @@ let selectedFilters = {
     light: false,
     fence: false,
     dogAgilityEquipment: false
-};
+}
 
-格
 function isValidInput(input) {
     const regex = /^[a-zA-Z\s]*$/; 
     return regex.test(input);
@@ -89,6 +88,7 @@ function fetchDogParks() {
 function applyFilters() {
     let filteredParks = allParks;
 
+   
     if (selectedFilters.largeDog) {
         filteredParks = filteredParks.filter(park => park.shape_area >= 2000); 
     }
@@ -131,7 +131,7 @@ function displayParks(parks) {
         parkListContainer.appendChild(parkItem);
     });
 
- 
+    
     $('.direction-btn').on('click', function () {
         const lat = $(this).data('lat');
         const long = $(this).data('long');
@@ -142,7 +142,7 @@ function displayParks(parks) {
         }
     });
 
- 
+    
     $('.weather-btn').on('click', function () {
         const lat = $(this).data('lat');  
         const lng = $(this).data('long');  
